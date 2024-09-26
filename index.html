@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIJOW Academy</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="lib/boxicons v2.1.4/css/boxicons.min.css" />
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="lib/swiperjs/swiper-bundle.min.css" />
+
+    <!-- AOS JS-->
+    <link rel="stylesheet" href="lib/aos/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div class="nav">
+        <a href="index.html" class="nav-title"><span>SIJOW</span> Academy</a>
+
+        <!-- Hambuger Menu -->
+        <button class="hambuger-menu" onclick="hamburgerToggle()">
+          <div class="icon">
+            <i class="bx bx-menu active" id="openNav"></i>
+          </div>
+          <div class="icon">
+            <i class="bx bx-x" id="closeNav"></i>
+          </div>
+        </button>
+
+        <!-- Nav Link -->
+        <div class="nav-links" id="nav">
+          <a href="index.html" class="nav-item"> Home </a>
+          <a href="pages/about/index.html" class="nav-item"> About Us </a>
+
+          <!-- Nav Dropdown -->
+          <div class="nav-dropdown">
+            <div class="dropdown-menu">
+              <button onclick="dropdownToggle()">
+                Courses
+                <i class="bx bx-chevron-down"></i>
+              </button>
+            </div>
+            <ul class="dropdown-links" id="dropdown">
+              <li class="dropdown-item">
+                <a href="pages/courses/front-end/index.html">
+                  Front End Developer
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="pages/courses/back-end/index.html">
+                  Back End Developer</a
+                >
+              </li>
+              <li class="dropdown-item">
+                <a href="pages/courses/others/index.html"> Kelas Lainnya </a>
+              </li>
+            </ul>
+          </div>
+
+          <a href="pages/career/index.html" class="nav-item">Career</a>
+          <a href="pages/register/index.html" class="nav-item trial-link"
+            >Join Class</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- Header Finish -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <!-- Footer Content -->
+      <div class="footer-content">
+        <!-- Footer Link -->
+        <div class="footer-menus">
+          <a href="index.html" class="footer-title"
+            ><span>SIJOW</span> Academy</a
+          >
+          <div class="footer-links">
+            <div class="footer-menu-content">
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="pages/about/index.html">About Us</a>
+                </li>
+                <li>
+                  <a href="pages/career/index.html">Career</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu-content">
+              <h3>Our Courses</h3>
+              <ul>
+                <li>
+                  <a href="pages/courses/front-end/index.html"
+                    >Front End Developer</a
+                  >
+                </li>
+                <li>
+                  <a href="pages/courses/back-end/index.html"
+                    >Back End Developer</a
+                  >
+                </li>
+                <li>
+                  <a href="pages/courses/others/index.html">Kelas Lainnya</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu-content">
+              <h3>Contact</h3>
+              <ul>
+                <li>
+                  <p>+62-123-456-789</p>
+                </li>
+                <li>
+                  <p>sijowacademy@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Copyright -->
+        <div class="footer-copyrigt">
+          <p>Copyright SIJOW Academy Website ©  2024</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Finish -->
+
+    <!-- Script JS -->
+    <script src="js/index.js"></script>
+
+    <!-- Swiper JS Config -->
+    <script src="lib/swiperjs/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+
+    <!-- AOS js -->
+    <script src="lib/aos/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: true,
+        offset: 100,
+      });
+    </script>
+  </body>
+</html>

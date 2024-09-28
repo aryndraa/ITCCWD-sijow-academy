@@ -28,3 +28,62 @@ function hamburgerToggle() {
     }
   });
 }
+
+// Why Acordion
+document.addEventListener("DOMContentLoaded", function () {
+  let initialized = false;
+
+  function initializeAccordion() {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 1024 && !initialized) {
+      var accordions = document.querySelectorAll(
+        ".why .why-container .why-content .why-list .list-item .wrap-title"
+      );
+
+      accordions.forEach(function (accordion) {
+        accordion.addEventListener("click", function () {
+          this.classList.toggle("active");
+
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      });
+
+      initialized = true;
+    } else if (screenWidth > 1024 && initialized) {
+      var panels = document.querySelectorAll(
+        ".why .why-container .why-content .why-list .list-item .panel"
+      );
+
+      panels.forEach(function (panel) {
+        panel.style.display = "block";
+      });
+
+      initialized = false;
+    }
+  }
+
+  initializeAccordion();
+
+  window.addEventListener("resize", function () {
+    initializeAccordion();
+  });
+});
+
+// Faq Acordiones
+const accordionBtns = document.querySelectorAll(".acordion-btn");
+
+accordionBtns.forEach((button) => {
+  button.addEventListener("click", () => {
+    const parentAccordion = button.closest(".faq-acordion");
+
+    if (parentAccordion) {
+      parentAccordion.classList.toggle("active");
+    }
+  });
+});

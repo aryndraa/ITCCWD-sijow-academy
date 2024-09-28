@@ -1,8 +1,10 @@
 :root {
   --bg: #fcfcff;
   --primary: #3bdfad;
+  --primary-hover: #1ab889;
   --secondary: #b170ff;
   --text: #1f2646;
+  --text-content: #656875;
   --shadow: 0 0 5px #0000002c;
 }
 
@@ -20,7 +22,6 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--bg);
   color: var(--text);
   overflow-x: hidden !important;
 }
@@ -35,9 +36,8 @@ span.secondary {
 
 /* Header Start */
 .header {
-  padding: 1.6rem 8%;
+  padding: 1.6rem 10%;
   background-color: #fff;
-  box-shadow: 0 0 15px #0000001f;
   position: absolute;
   top: 0;
   left: 0;
@@ -152,8 +152,14 @@ span.secondary {
   padding: 4px 12px;
   background-color: var(--primary);
   color: #fff;
+  border-bottom: solid 3px var(--primary-hover);
   border-radius: 8px;
   font-weight: 500;
+  transition: ease-in-out 300ms;
+}
+
+.header .nav .nav-links .nav-item.trial-link:hover {
+  border-bottom: solid 0px var(--primary-hover);
 }
 
 /* Header Finish */
@@ -163,38 +169,8 @@ span.secondary {
   color: #fff;
 }
 
-.footer .footer-offer {
-  padding: 2rem 5%;
-  background-color: #45427d;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer .footer-offer h2 {
-  font-size: 2.2rem;
-}
-
-.footer .footer-offer h2::after {
-  content: "";
-  display: block;
-  border-bottom: solid 3px var(--primary);
-  width: 40%;
-  background-color: #fff;
-  margin-top: 8px;
-}
-
-.footer .footer-offer a {
-  font-size: 1.5rem;
-  color: #fff;
-  font-weight: 600;
-  padding: 6px 16px;
-  border-radius: 8px;
-  background-color: var(--primary);
-}
-
 .footer .footer-content {
-  padding: 2.8rem 5%;
+  padding: 2.8rem 10%;
   background-color: #2f2d5c;
 }
 
@@ -264,7 +240,7 @@ span.secondary {
 @media (max-width: 768px) {
   /* Header Start */
   .header {
-    padding: 1.2rem 4%;
+    padding: 1.2rem 5%;
     background-color: #fff;
     box-shadow: 0 0 15px #0000001f;
     position: relative;
@@ -419,7 +395,7 @@ span.secondary {
 
   /* Footer Start */
   .footer .footer-offer {
-    padding: 2rem 4%;
+    padding: 2rem 5%;
     background-color: #45427d;
     display: flex;
     flex-direction: column;

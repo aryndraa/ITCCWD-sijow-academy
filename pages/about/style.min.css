@@ -1,0 +1,730 @@
+/* template section */
+.about-hero,
+.about,
+.visi-mision,
+.teacher {
+  padding: 5rem 10%;
+}
+
+.about-hero .hero-content .hero-title,
+.about .about-content .about-title,
+.visi-mision .title,
+.teacher .title {
+  font-size: 3.2rem;
+  padding-bottom: 3rem;
+  line-height: 1.3;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Hero Start */
+.about-hero {
+  min-height: 100vh;
+  background-image: url("../../assets/about/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero .hero-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-hero .hero-content .hero-title {
+  text-transform: capitalize;
+  padding-bottom: 0rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero .hero-content .hero-subtitle {
+  width: 70%;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2.6rem;
+  color: var(--text-content);
+}
+
+.about-hero .hero-content .scroll-btn a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--text-content);
+}
+
+.about-hero .hero-content .scroll-btn a i {
+  font-size: 2rem;
+}
+
+/* Hero Finish */
+
+/* About Start */
+.about {
+  position: relative;
+}
+
+.about .about-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  margin-bottom: 6rem;
+}
+
+.about .about-link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.6rem;
+}
+
+.about .about-link a {
+  color: var(--text);
+  font-weight: 500;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  border-bottom: solid 1px transparent;
+  max-width: fit-content;
+}
+
+.about .about-link a.active {
+  border-bottom: solid 1px var(--text-content);
+}
+
+.about .about-link a:hover {
+  border-bottom: solid 1px var(--text-content);
+}
+
+.about .about-content .about-title {
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.about .about-content .about-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  font-weight: 300;
+  color: var(--text-content);
+  line-height: 1.8;
+}
+
+.about .about-img {
+  max-width: 100%;
+}
+
+.about .about-img img {
+  width: 100%;
+}
+
+.about .about-svg {
+  position: absolute;
+  bottom: 50%;
+  left: 5%;
+}
+/* Abot Finish */
+
+/* Visi & Mision Start  */
+.visi-mision {
+  position: relative;
+}
+
+.visi-mision .title {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  border-bottom: solid 2px var(--text);
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.visi-mision .visi {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.visi-mision .visi .visi-content {
+  width: 60%;
+}
+
+.visi-mision .visi .visi-content .visi-title {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.visi-mision .visi .visi-content p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--text-content);
+}
+
+.visi-mision .visi .visi-img {
+  max-width: 100%;
+}
+
+.visi-mision .visi .visi-img img {
+  width: 100%;
+}
+
+.visi-mision .visi-svg {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.visi-mision .mision {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+}
+
+.visi-mision .mision .mision-card.center {
+  border: solid 1px var(--text);
+  padding: 0 2rem;
+  border-top: none;
+  border-bottom: none;
+}
+
+.visi-mision .mision .mision-card .mision-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+.visi-mision .mision .mision-card .mision-desc {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--text-content);
+}
+
+/* Visi & Mision Finish  */
+
+/* Teacher Start */
+
+.teacher .title {
+  border-bottom: solid 2px var(--text-content);
+  padding-bottom: 1rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.teacher .teacher-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2rem;
+}
+
+.teacher .teacher-list .card {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.teacher .teacher-list .card img {
+  width: 100%;
+  filter: saturate(0.1);
+  transform: scale(1);
+  transition: 300ms ease;
+  margin-bottom: 0.5rem;
+}
+
+.teacher .teacher-list .card:hover img {
+  filter: saturate(1);
+  transform: scale(1.05);
+}
+
+.teacher .teacher-list .card .teacher-desc .teacher-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+/* Teacher Finish *
+
+/* responsive */
+
+/* Handphone */
+@media screen and (max-width: 767px) {
+  /* template section */
+  .about-hero,
+  .about,
+  .visi-mision,
+  .teacher {
+    padding: 3rem 5%;
+  }
+
+  .about-hero .hero-content .hero-title,
+  .about .about-content .about-title,
+  .visi-mision .title,
+  .teacher .title {
+    font-size: 2.25rem;
+    padding-bottom: 2rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  /* Hero Start */
+  .about-hero {
+    min-height: 100vh;
+    background-image: url("../../assets/about/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .about-hero .hero-content {
+    text-align: start;
+    align-items: start;
+  }
+
+  .about-hero .hero-content .hero-title {
+    text-transform: capitalize;
+    padding-bottom: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-hero .hero-content .hero-subtitle {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .about-hero .hero-content .scroll-btn a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-content);
+  }
+
+  .about-hero .hero-content .scroll-btn a i {
+    font-size: 1.5rem;
+  }
+
+  /* Hero Finish */
+
+  /* About Start */
+  .about {
+    position: relative;
+  }
+
+  .about .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    margin-bottom: 4rem;
+  }
+
+  .about .about-link {
+    gap: 0.8rem;
+  }
+
+  .about .about-link a {
+    color: var(--text);
+    font-weight: 500;
+    padding-bottom: 0.8rem;
+    font-size: 1.1rem;
+    max-width: fit-content;
+  }
+
+  .about .about-link a.active {
+    border-bottom: solid 1px var(--text-content);
+  }
+
+  .about .about-link a:hover {
+    border-bottom: solid 1px var(--text-content);
+  }
+
+  .about .about-content .about-title {
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .about .about-content .about-desc {
+    gap: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .about .about-img {
+    max-width: 100%;
+    height: 225px;
+  }
+
+  .about .about-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about .about-svg {
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+  }
+  /* Abot Finish */
+
+  /* Visi & Mision Start  */
+  .visi-mision {
+    position: relative;
+  }
+
+  .visi-mision .title {
+    text-transform: uppercase;
+    padding-bottom: 0.8rem;
+    border-bottom: solid 2px var(--text);
+    width: fit-content;
+    margin-bottom: 1.6rem;
+  }
+
+  .visi-mision .visi {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .visi-mision .visi .visi-content {
+    width: 100%;
+  }
+
+  .visi-mision .visi .visi-content .visi-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  .visi-mision .visi .visi-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text-content);
+  }
+
+  .visi-mision .visi .visi-img {
+    max-width: 100%;
+  }
+
+  .visi-mision .visi .visi-img img {
+    width: 100%;
+  }
+
+  .visi-mision .visi-svg {
+    display: none;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+  }
+
+  .visi-mision .mision {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
+
+  .visi-mision .mision .mision-card.center {
+    border: solid 1px var(--text);
+    padding: 1rem 0rem;
+    border-right: none;
+    border-left: none;
+  }
+
+  .visi-mision .mision .mision-card .mision-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
+
+  .visi-mision .mision .mision-card .mision-desc {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text-content);
+  }
+
+  /* Visi & Mision Finish  */
+
+  /* Teacher Start */
+
+  .teacher .teacher-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  }
+
+  .teacher .teacher-list .card img {
+    margin-bottom: 0rem;
+  }
+
+  .teacher .teacher-list .card .teacher-desc .teacher-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .teacher .teacher-list .card .teacher-desc .teacher-jobs {
+    font-size: 0.8rem;
+  }
+  /* Teacher Finish */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* template section */
+  .about-hero,
+  .about,
+  .visi-mision,
+  .teacher {
+    padding: 3rem 5%;
+  }
+
+  .about-hero .hero-content .hero-title,
+  .about .about-content .about-title,
+  .visi-mision .title,
+  .teacher .title {
+    font-size: 3.5rem;
+    padding-bottom: 3rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  /* Hero Start */
+  .about-hero {
+    justify-content: start;
+    align-items: start;
+  }
+
+  .about-hero .hero-content {
+    text-align: start;
+    align-items: start;
+  }
+
+  .about-hero .hero-content .hero-title {
+    text-transform: capitalize;
+    padding-bottom: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-hero .hero-content .hero-subtitle {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2.6rem;
+    color: var(--text-content);
+  }
+
+  .about-hero .hero-content .scroll-btn a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--text-content);
+  }
+
+  .about-hero .hero-content .scroll-btn a i {
+    font-size: 2rem;
+  }
+
+  /* Hero Finish */
+
+  /* About Start */
+  .about {
+    position: relative;
+  }
+
+  .about .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    margin-bottom: 4rem;
+  }
+
+  .about .about-link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.6rem;
+  }
+
+  .about .about-link a {
+    color: var(--text);
+    font-weight: 500;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    border-bottom: solid 1px transparent;
+    max-width: fit-content;
+  }
+
+  .about .about-link a.active {
+    border-bottom: solid 1px var(--text-content);
+  }
+
+  .about .about-link a:hover {
+    border-bottom: solid 1px var(--text-content);
+  }
+
+  .about .about-content .about-title {
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  .about .about-content .about-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+    font-weight: 300;
+    color: var(--text-content);
+    line-height: 1.8;
+  }
+
+  .about .about-img {
+    max-width: 100%;
+    height: 375px;
+  }
+
+  .about .about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about .about-svg {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+  }
+  /* Abot Finish */
+
+  /* Visi & Mision Start  */
+  .visi-mision {
+    position: relative;
+  }
+
+  .visi-mision .title {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    border-bottom: solid 2px var(--text);
+    width: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .visi-mision .visi {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  .visi-mision .visi .visi-content {
+    width: 100%;
+  }
+
+  .visi-mision .visi .visi-content .visi-title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  .visi-mision .visi .visi-content p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--text-content);
+  }
+
+  .visi-mision .visi .visi-img {
+    max-width: 100%;
+  }
+
+  .visi-mision .visi .visi-img img {
+    width: 100%;
+  }
+
+  .visi-mision .visi-svg {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+  }
+
+  .visi-mision .mision {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.4rem;
+  }
+
+  .visi-mision .mision .mision-card.center {
+    border: solid 1px var(--text);
+    padding: 0 1.2rem;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .visi-mision .mision .mision-card .mision-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
+
+  .visi-mision .mision .mision-card .mision-desc {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--text-content);
+  }
+
+  /* Visi & Mision Finish  */
+
+  /* Teacher Start */
+
+  .teacher .title {
+    border-bottom: solid 2px var(--text-content);
+    padding-bottom: 1rem;
+    width: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .teacher .teacher-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+
+  .teacher .teacher-list .card {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .teacher .teacher-list .card img {
+    width: 100%;
+    filter: saturate(0.1);
+    transform: scale(1);
+    transition: 300ms ease;
+    margin-bottom: 0.5rem;
+  }
+
+  .teacher .teacher-list .card:hover img {
+    filter: saturate(1);
+    transform: scale(1.05);
+  }
+
+  .teacher .teacher-list .card .teacher-desc .teacher-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  /* Teacher Finish */
+}

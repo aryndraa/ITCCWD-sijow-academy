@@ -93,16 +93,16 @@
     <!-- Hero Start -->
     <section class="about-hero" id="aboutHero">
       <div class="hero-content">
-        <h1 class="hero-title">
+        <h1 class="hero-title" data-aos="fade-up">
           Jalan pintas menjadi <span class="primary">full-stack</span> <br />
           developer yang <span class="secondary">profesional</span>
         </h1>
-        <p class="hero-subtitle">
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
           Membantu memaksimalkan siswa dan mahasiswa dengan skill teknologi
           digital di bidang developer
         </p>
         <div class="scroll-btn">
-          <a href="#about">
+          <a href="#about" data-aos="fade-up" data-aos-delay="200">
             <i class="bx bx-mouse"></i>
             Scroll Selengkapnya
           </a>
@@ -115,13 +115,19 @@
     <section class="about" id="about">
       <div class="about-container">
         <div class="about-link">
-          <a href="#about" class="active"> Tentang Kami </a>
-          <a href="#visiMision">Visi & Misi </a>
-          <a href="#teacher">Guru </a>
+          <a href="#about" class="active" data-aos="fade-right">
+            Tentang Kami
+          </a>
+          <a href="#visiMision" data-aos="fade-right" data-aos-delay="100"
+            >Visi & Misi
+          </a>
+          <a href="#teacher" data-aos="fade-right" data-aos-delay="200"
+            >Guru
+          </a>
         </div>
         <div class="about-content">
-          <h1 class="about-title">Tentang Kami.</h1>
-          <div class="about-desc">
+          <h1 class="about-title" data-aos="fade-up">Tentang Kami.</h1>
+          <div class="about-desc" data-aos="fade-up">
             <p>
               SIJOW Akademi adalah Penyedia belajar digital untuk membimbing
               anda memahami dan menguasai teknologi website masa depan. Dimulai
@@ -144,56 +150,67 @@
         </div>
       </div>
       <div class="about-img">
-        <img src="../../assets/about/aboutbg.jpg" alt="image" />
+        <img
+          src="../../assets/about/aboutbg.jpg"
+          alt="image"
+          data-aos="fade-up"
+        />
       </div>
       <img
         src="../../assets/about/aboutsvg.svg"
         alt="image"
         class="about-svg"
+        data-aos="fade-right"
       />
     </section>
     <!-- About Finish -->
 
     <!-- Visi &  Mision Start -->
     <section class="visi-mision" id="visiMision">
-      <h1 class="title">Visi & Misi.</h1>
+      <h1 class="title" data-aos="fade-right">Visi & Misi.</h1>
       <div class="visi">
         <div class="visi-content">
-          <h2 class="visi-title">
+          <h2 class="visi-title" data-aos="fade-right">
             <i class="bx bxs-quote-alt-left"></i>
             Membuat generasi penerus bangsa yang mahir dengan teknologi digital
             <i class="bx bxs-quote-alt-right"></i>
           </h2>
-          <p>
+          <p data-aos="fade-right" data-aos-delay="100">
             Kami bertujuan mencetak inovator teknologi berpengaruh yang membawa
             dampak positif bagi masyarakat melalui literasi digital.
           </p>
         </div>
         <div class="visi-img">
-          <img src="../../assets/about/visi.jpg" alt="image" />
+          <img
+            src="../../assets/about/visi.jpg"
+            alt="image"
+            data-aos="fade-left"
+          />
         </div>
         <img
           src="../../assets/about/aboutsvg.svg"
           alt="image"
           class="visi-svg"
+          data-aos="fade-left"
+          data-aos-delay="100"
         />
       </div>
       <div class="mision">
-        <div class="mision-card">
+        <div class="mision-card" data-aos="fade-up">
           <h2 class="mision-title">Pembelajaran</h2>
           <p class="mision-desc">
             SIJOW Academy Memberikan metode pembelajaran yang menyenangkan
             sesuai standar global
           </p>
         </div>
-        <div class="mision-card center">
+        <div class="mision-card center" data-aos="fade-up" data-aos-delay="100">
           <h2 class="mision-title">Digital</h2>
           <p class="mision-desc">
             SIJOW Academy Meningkatkan kemampuan digital dalam bidang website
             5.0
           </p>
         </div>
-        <div class="mision-card">
+        <div class="mision-card" data-aos="fade-up" data-aos-delay="200">
           <h2 class="mision-title">Logis</h2>
           <p class="mision-desc">
             SIJOW Academy Meningkatkan pemikiran logis para pelajar
@@ -205,8 +222,8 @@
 
     <!-- Teacher Start -->
     <section class="teacher" id="teacher">
-      <h1 class="title">Guru-Guru SIJOW Academy</h1>
-      <div class="teacher-list">
+      <h1 class="title" data-aos="fade-right">Guru-Guru SIJOW Academy</h1>
+      <div class="teacher-list" data-aos="fade-up">
         <div class="card">
           <img src="../../assets/about/teach1.jpg" alt="teacher" />
           <div class="teacher-desc">
@@ -369,9 +386,9 @@
     <script src="../../lib/aos/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 1200,
+        duration: 800,
         once: true,
-        offset: 100,
+        offset: 52,
       });
     </script>
   </body>

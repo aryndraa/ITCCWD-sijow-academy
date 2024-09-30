@@ -87,3 +87,13 @@ accordionBtns.forEach((button) => {
     }
   });
 });
+
+// roadmap acordions
+document
+  .querySelectorAll(".roadmap .roadmap-table .table-body .item .item-head")
+  .forEach((itemHead) => {
+    itemHead.addEventListener("click", function () {
+      const item = this.parentElement;
+      item.classList.toggle("active");
+    });
+  });

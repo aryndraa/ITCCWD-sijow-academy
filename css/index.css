@@ -453,7 +453,7 @@
 
 /* contact start */
 .contact {
-  background-color: #45427d;
+  background-color: #29335c;
   position: relative;
 }
 
@@ -482,6 +482,7 @@
 
 .contact .svg {
   position: absolute;
+  height: 100%;
   top: 0;
   right: 0;
 }

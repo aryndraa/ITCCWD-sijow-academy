@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIJOW Academy</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../../../../css/style.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../style.min.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Boxicons -->
+    <link
+      rel="stylesheet"
+      href="../../../../lib/boxicons v2.1.4/css/boxicons.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="../../../../lib/swiperjs/swiper-bundle.min.css"
+    />
+
+    <!-- AOS JS-->
+    <link rel="stylesheet" href="../../../../lib/aos/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div class="nav">
+        <a href="../../../../index.html" class="nav-title"
+          ><span>SIJOW</span> Academy</a
+        >
+
+        <!-- Hambuger Menu -->
+        <button class="hambuger-menu" onclick="hamburgerToggle()">
+          <div class="icon">
+            <i class="bx bx-menu active" id="openNav"></i>
+          </div>
+          <div class="icon">
+            <i class="bx bx-x" id="closeNav"></i>
+          </div>
+        </button>
+
+        <!-- Nav Link -->
+        <div class="nav-links" id="nav">
+          <a href="../../../../index.html" class="nav-item"> Home </a>
+          <a href="../../../../pages/about/index.html" class="nav-item">
+            About Us
+          </a>
+
+          <!-- Nav Dropdown -->
+          <div class="nav-dropdown">
+            <div class="dropdown-menu">
+              <button onclick="dropdownToggle()">
+                Courses
+                <i class="bx bx-chevron-down"></i>
+              </button>
+            </div>
+            <ul class="dropdown-links" id="dropdown">
+              <li class="dropdown-item">
+                <a href="../../../../pages/courses/front-end/index.html">
+                  Front End Developer
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="../../../../pages/courses/back-end/index.html">
+                  Back End Developer</a
+                >
+              </li>
+              <li class="dropdown-item">
+                <a href="../../../../pages/courses/others/index.html">
+                  Kelas Lainnya
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <a href="../../../../pages/career/index.html" class="nav-item"
+            >Career</a
+          >
+          <a
+            href="../../../../pages/register/index.html"
+            class="nav-item trial-link"
+            >Join Class</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- Header Finish -->
+
+    <!-- Hero Start -->
+    <section class="course-hero" id="courseHero">
+      <div class="hero-content" data-aos="fade-up">
+        <div class="hero-title">
+          <h1 class="course-title" data-aos="fade-up" data-aos-delay="100">
+            Back End Developer
+          </h1>
+          <div class="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+            <a href="../../../../pages/courses/back-end/index.html"
+              >Back End Developer</a
+            >
+            <i class="bx bx-chevron-right"></i>
+            <a href="../../../../pages/courses/back-end/class/django.html"
+              >Django</a
+            >
+          </div>
+        </div>
+        <a class="scroll" href="#about" data-aos="fade-up" data-aos-delay="100"
+          >Tentang Kelas <i class="bx bx-down-arrow-circle"></i
+        ></a>
+      </div>
+      <div class="class-nav">
+        <div class="class-child">
+          <a
+            href="../../../../pages/courses/back-end/class/node.html"
+            class=""
+            data-aos="fade-up"
+            >Node JS</a
+          >
+          <a
+            href="../../../../pages/courses/back-end/class/laravel.html"
+            class=""
+            data-aos="fade-up"
+            data-aos-delay="100"
+            >Laravel 11</a
+          >
+          <a
+            href="../../../../pages/courses/back-end/class/django.html"
+            class="active"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            >Django</a
+          >
+        </div>
+        <a
+          href="../../../../pages/courses/back-end/index.html"
+          class="all"
+          data-aos="fade-up"
+          >Semua Kelas</a
+        >
+      </div>
+    </section>
+    <!-- Hero Finish -->
+
+    <!-- About Start -->
+    <section class="about" id="about">
+      <div class="about-content" data-aos="zoom-in">
+        <div class="about-course">
+          <h1>Membangun Back End Website dengan Django</h1>
+          <p>
+            Django adalah sebuah framework web yang ditulis dalam bahasa
+            pemrograman Python. Framework ini digunakan untuk membangun aplikasi
+            web dengan cepat dan efisien. Django menawarkan banyak fitur bawaan
+            yang memudahkan pengembang dalam mengerjakan tugas-tugas yang umum
+            dalam pembuatan aplikasi web.
+          </p>
+          <a href="../../../../pages/register/index.html">Daftar Sekarang</a>
+        </div>
+        <div class="about-include" data-aos="fade-up" data-aos-delay="100">
+          <h2>Kursus ini mencakup</h2>
+          <ul>
+            <li>
+              <i class="bx bx-check-circle"></i>
+              Sertifikasi Lulus
+            </li>
+            <li>
+              <i class="bx bx-check-circle"></i>
+              Dashboard pembelajaran
+            </li>
+            <li>
+              <i class="bx bx-check-circle"></i>
+              Akun Pelajar
+            </li>
+            <li>
+              <i class="bx bx-check-circle"></i>
+              Projek Portofolio
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- About Finish -->
+
+    <!-- Excess Start -->
+    <section class="excess" id="excess">
+      <h1 class="title" data-aos="fade-right">Keunggulan Django</h1>
+      <div class="excess-list">
+        <div class="item" data-aos="fade-up">
+          <div class="card-content">
+            <h2>Otomatisasi tugas database</h2>
+            <p>
+              Django menggunakan ORM (Object-Relational Mapping) untuk
+              mempermudah pengelolaan database. Ini memungkinkan pengembang
+              untuk bekerja dengan database menggunakan kode Python alih-alih
+              menulis query SQL secara langsung.
+            </p>
+          </div>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-content">
+            <h2>Arsitektur skala besar</h2>
+            <p>
+              Django dirancang untuk mendukung proyek berskala besar. Dengan
+              menggunakan konsep Model-View-Template (MVT), Django memisahkan
+              logika bisnis, presentasi, dan data, sehingga memudahkan
+              pengelolaan aplikasi yang kompleks.
+            </p>
+          </div>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-content">
+            <h2>Scalability</h2>
+            <p>
+              Django cocok untuk aplikasi yang membutuhkan kemampuan untuk
+              bertumbuh dan menangani banyak pengguna, seperti media sosial,
+              e-commerce, atau situs berita besar.
+            </p>
+          </div>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-content">
+            <h2>Keamanan bawaan</h2>
+            <p>
+              Django memiliki fitur keamanan bawaan untuk melindungi aplikasi
+              web dari ancaman umum seperti SQL injection, cross-site scripting
+              (XSS), dan cross-site request forgery (CSRF).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Excess Finish -->
+
+    <!-- Roadmap Start -->
+    <section class="roadmap" id="roadmap" data-aos="fade-up">
+      <div class="roadmap-table">
+        <div class="table-header">
+          <h1 class="title">Modul Pembelajaran</h1>
+          <ul>
+            <li>12 Modul</li>
+            <li>4 Exam</li>
+            <li>2 Project</li>
+          </ul>
+        </div>
+        <div class="table-body">
+          <!-- Modul 1 -->
+          <div class="item">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-id">1</span>
+                <div class="content">
+                  <h2 class="title">Persiapan Dasar</h2>
+                  <p class="desc">
+                    Sebelum memulai dengan Django, penting untuk memahami konsep
+                    dasar dalam Python dan pengembangan web.
+                  </p>
+                </div>
+              </div>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="item-body">
+              <ul>
+                <li>Dasar-Dasar Python</li>
+                <li>Dasar-Dasar Web</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modul 2 -->
+          <div class="item">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-id">2</span>
+                <div class="content">
+                  <h2 class="title">Instalasi dan Setup Django</h2>
+                  <p class="desc">
+                    Pelajari cara menginstal dan mengkonfigurasi proyek Django.
+                  </p>
+                </div>
+              </div>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="item-body">
+              <ul>
+                <li>Instalasi Django</li>
+                <li>Django Settings dan Konfigurasi Awal</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modul 3 -->
+          <div class="item">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-id">3</span>
+                <div class="content">
+                  <h2 class="title">Django Apps dan Struktur Proyek</h2>
+                  <p class="desc">
+                    Django mengorganisir proyek ke dalam apps yang modular.
+                    Pelajari cara membuat dan mengelola aplikasi dalam proyek
+                    Django.
+                  </p>
+                </div>
+              </div>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="item-body">
+              <ul>
+                <li>Django Apps</li>
+                <li>Routing dan Views</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modul 4 -->
+          <div class="item">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-id">4</span>
+                <div class="content">
+                  <h2 class="title">Django Template System</h2>
+                  <p class="desc">
+                    Pelajari tentang sistem template Django untuk menghasilkan
+                    HTML dari views.
+                  </p>
+                </div>
+              </div>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="item-body">
+              <ul>
+                <li>Django Template Basics</li>
+                <li>Static Files</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modul 5 -->
+          <div class="item">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-id">5</span>
+                <div class="content">
+                  <h2 class="title">
+                    Models dan ORM (Object-Relational Mapping)
+                  </h2>
+                  <p class="desc">
+                    Pelajari bagaimana Django menggunakan ORM untuk mengelola
+                    database secara objektif.
+                  </p>
+                </div>
+              </div>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="item-body">
+              <ul>
+                <li>Membuat Model</li>
+                <li>CRUD dengan ORM</li>
+                <li>Relationships</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modul 6 -->
+          <div class="item">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-id">6</span>
+                <div class="content">
+                  <h2 class="title">Django Admin</h2>
+                  <p class="desc">
+                    Django menyediakan antarmuka admin yang kuat untuk mengelola
+                    data tanpa perlu menulis kode tambahan.
+                  </p>
+                </div>
+              </div>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="item-body">
+              <ul>
+                <li>Mengaktifkan Django Admin</li>
+                <li>Customizing Django Admin</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modul 7 -->
+          <div class="item">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-id">7</span>
+                <div class="content">
+                  <h2 class="title">Django Forms</h2>
+                  <p class="desc">
+                    Django forms mempermudah pengelolaan form input dan validasi
+                    data.
+                  </p>
+                </div>
+              </div>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="item-body">
+              <ul>
+                <li>Django Forms Basics</li>
+                <li>Model Forms</li>
+                <li>Form Validation:</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modul 8 -->
+          <div class="item">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-id">8</span>
+                <div class="content">
+                  <h2 class="title">Autentikasi dan Otorisasi</h2>
+                  <p class="desc">
+                    Django memiliki sistem autentikasi bawaan yang mempermudah
+                    penanganan login, register, dan izin pengguna.
+                  </p>
+                </div>
+              </div>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="item-body">
+              <ul>
+                <li>Autentikasi Bawaan</li>
+                <li>Authorization dan Permissions</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modul 9 -->
+          <div class="item">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-id">9</span>
+                <div class="content">
+                  <h2 class="title">Django Rest Framework (DRF)</h2>
+                  <p class="desc">
+                    Pelajari cara membuat API dengan Django menggunakan Django
+                    Rest Framework.
+                  </p>
+                </div>
+              </div>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="item-body">
+              <ul>
+                <li>DRF Basics</li>
+                <li>Autentikasi API</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modul 10 -->
+          <div class="item">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-id">10</span>
+                <div class="content">
+                  <h2 class="title">Deployment Django</h2>
+                  <p class="desc">
+                    Setelah membangun aplikasi Django, pelajari cara melakukan
+                    deployment ke server produksi.
+                  </p>
+                </div>
+              </div>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="item-body">
+              <ul>
+                <li>Environments Setup</li>
+                <li>Static dan Media Files</li>
+                <li>Deployment cloud</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modul 11 -->
+          <div class="item">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-id">11</span>
+                <div class="content">
+                  <h2 class="title">Testing dan Debugging</h2>
+                  <p class="desc">
+                    Pelajari cara menguji aplikasi Django dan melakukan
+                    debugging secara efisien.
+                  </p>
+                </div>
+              </div>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="item-body">
+              <ul>
+                <li>Unit Testing:</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modul 12 -->
+          <div class="item">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-id">12</span>
+                <div class="content">
+                  <h2 class="title">Projek Akhir</h2>
+                  <p class="desc">Membuat Projek Akhir Pada Kelas Django</p>
+                </div>
+              </div>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="item-body">
+              <ul>
+                <li>Pengerjaan Projek</li>
+                <li>Deploy Projek</li>
+                <li>Presentasi Projek</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modul final -->
+          <div class="item-sertif">
+            <div class="item-head">
+              <div class="head-content">
+                <span class="item-cer"
+                  ><i class="bx bx-certification"></i
+                ></span>
+                <div class="content">
+                  <h2 class="title">Sertifikat kelulusan</h2>
+                  <p class="desc">
+                    Sertifikat penyelesaian program kelas Django
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Roadmap Finish -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <!-- Footer Content -->
+      <div class="footer-content">
+        <!-- Footer Link -->
+        <div class="footer-menus">
+          <a href="../../../../index.html" class="footer-title"
+            ><span>SIJOW</span> Academy</a
+          >
+          <div class="footer-links">
+            <div class="footer-menu-content">
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="../../../../index.html">Home</a>
+                </li>
+                <li>
+                  <a href="../../../../pages/about/index.html">About Us</a>
+                </li>
+                <li>
+                  <a href="../../../../pages/career/index.html">Career</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu-content">
+              <h3>Our Courses</h3>
+              <ul>
+                <li>
+                  <a href="../../../../pages/courses/front-end/index.html"
+                    >Front End Developer</a
+                  >
+                </li>
+                <li>
+                  <a href="../../../../pages/courses/back-end/index.html"
+                    >Back End Developer</a
+                  >
+                </li>
+                <li>
+                  <a href="../../../../pages/courses/others/index.html"
+                    >Kelas Lainnya</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu-content">
+              <h3>Contact</h3>
+              <ul>
+                <li>
+                  <p>+62-123-456-789</p>
+                </li>
+                <li>
+                  <p>example@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Copyright -->
+        <div class="footer-copyrigt">
+          <p>Copyright SIJOW Academy Website ©  2024</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Finish -->
+
+    <!-- Script JS -->
+    <script src="../../../../js/index.js"></script>
+
+    <!-- Swiper JS Config -->
+    <script src="../../../../lib/swiperjs/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+
+    <!-- AOS js -->
+    <script src="../../../../lib/aos/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 52,
+      });
+    </script>
+  </body>
+</html>

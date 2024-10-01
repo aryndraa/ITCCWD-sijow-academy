@@ -4,6 +4,22 @@ function dropdownToggle() {
   dropdown.classList.toggle("active");
 }
 
+// nav fixed
+window.onscroll = function () {
+  toggleFixedHeader();
+};
+
+function toggleFixedHeader() {
+  const header = document.querySelector(".header");
+  if (window.scrollY > 400) {
+    header.classList.add("active");
+  } else {
+    if (window.scrollY == 0) {
+      header.classList.remove("active");
+    }
+  }
+}
+
 // hambuger menu
 function hamburgerToggle() {
   var openNav = document.getElementById("openNav");

@@ -30,6 +30,9 @@
 
     <!-- AOS JS-->
     <link rel="stylesheet" href="../../lib/aos/dist/aos.css" />
+
+    <!-- public icon -->
+    <link rel="shortcut icon" href="../../assets/public/logo.svg" />
   </head>
   <body>
     <!-- Header Start -->
@@ -89,6 +92,102 @@
       </div>
     </header>
     <!-- Header Finish -->
+
+    <!-- Hero Start -->
+    <section class="hero-register">
+      <div class="hero-content">
+        <h1 class="title">
+          Daftar <span class="primary">Kelas</span> Impianmu <br />
+          Sekarang!
+        </h1>
+        <p>
+          Silahkan isi form dan kirim pesan ajuanmu kepada kami, kami akan
+          membalas pesan mu segera!
+        </p>
+        <a href="#form">
+          <i class="bx bx-mouse"></i>
+          Scroll Selengkapnya
+        </a>
+      </div>
+    </section>
+    <!-- Hero Finish -->
+
+    <!-- form start -->
+    <section class="form" id="form">
+      <div class="contact">
+        <div class="contact-title">
+          <h1>Hubungi Kami</h1>
+          <p>Hubungi kami dengan kontak yang ada di bawah!</p>
+        </div>
+        <div class="contact-list">
+          <div class="item">
+            <i class="bx bxl-instagram-alt"></i>
+            <div class="item-content">
+              <h3>Instagram</h3>
+              <a href="#">@exampleInstagram</a>
+            </div>
+          </div>
+          <div class="item">
+            <i class="bx bxs-phone-call"></i>
+            <div class="item-content">
+              <h3>Telepon</h3>
+              <a href="#">082144915822</a>
+            </div>
+          </div>
+          <div class="item">
+            <i class="bx bxs-envelope"></i>
+            <div class="item-content">
+              <h3>Email</h3>
+              <a href="#">example@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-input">
+        <form action="">
+          <h1>Kirim Pesan</h1>
+          <div class="input">
+            <label for="name">Nama</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Masukan Nama"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="telp">Nomor Telepon</label>
+            <input
+              type="tel"
+              name="telp"
+              placeholder="Masukan Nomor Telepon"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="program">Pilih Masukan</label>
+            <select name="program" required>
+              <option value="" disabled selected>Pilih Program</option>
+              <option value="front end developer">Front End Developer</option>
+              <option value="back end developer">Back End Developer</option>
+              <option value="web security">Web Security</option>
+              <option value="internship">Internship</option>
+            </select>
+          </div>
+          <div class="input">
+            <label for="pesan">Pesan</label>
+            <textarea
+              name="pesan"
+              placeholder="Masukkan pesan"
+              class="pesan"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- form finish -->
 
     <!-- Footer Start -->
     <footer class="footer">

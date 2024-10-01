@@ -1,0 +1,325 @@
+/* Hero Start */
+.hero-register {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/register/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-register .hero-content {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-register .hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.hero-register .hero-content p {
+  font-size: 1.2rem;
+  max-width: 60%;
+  margin-bottom: 2rem;
+}
+
+.hero-register .hero-content a {
+  color: #fff;
+}
+/* Hero Finish */
+
+/* Section Styles */
+.form {
+  display: flex;
+  padding: 5rem 10%;
+  gap: 4rem;
+}
+
+.form .contact {
+  flex: 1;
+  padding: 2rem;
+  border: solid 1px var(--text-content);
+  border-radius: 8px;
+}
+
+.contact-title {
+  margin-bottom: 20px;
+}
+
+.contact-title h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.contact-title p {
+  font-size: 1rem;
+  color: var(--text-content);
+  font-weight: 300;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  gap: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--text-content);
+}
+
+.item i {
+  font-size: 2.4rem;
+  color: var(--primary);
+}
+
+.item-content h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.item-content a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.item-content a:hover {
+  text-decoration: underline;
+}
+
+.form-input {
+  flex: 1;
+  padding: 2rem;
+  border: solid 1px var(--text-content);
+  border-radius: 8px;
+}
+
+.form-input h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.input {
+  margin-bottom: 15px;
+}
+
+.input label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.input input,
+.input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input input:focus,
+.input textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.input select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input textarea {
+  resize: none;
+  min-width: 100%;
+}
+
+.btn {
+  background-color: var(--primary);
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  /* Hero Start */
+  .hero-register {
+    min-height: 100vh;
+    padding: 2rem 5%;
+  }
+
+  .hero-register .hero-content {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-register .hero-content h1 {
+    font-size: 3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .hero-register .hero-content p {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .hero-register .hero-content a {
+    color: #fff;
+  }
+  /* Hero Finish */
+
+  /* Section Styles */
+  .form {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3rem 5%;
+    gap: 2rem;
+  }
+
+  .form .contact {
+    flex: 1;
+    padding: 1rem;
+    border: solid 1px var(--text-content);
+    border-radius: 8px;
+  }
+
+  .contact-title {
+    margin-bottom: 20px;
+  }
+
+  .contact-title h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+  }
+
+  .contact-title p {
+    font-size: 1rem;
+    color: var(--text-content);
+    font-weight: 300;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    gap: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--text-content);
+  }
+
+  .item i {
+    font-size: 2.4rem;
+    color: var(--primary);
+  }
+
+  .item-content h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .item-content a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  .item-content a:hover {
+    text-decoration: underline;
+  }
+
+  .form-input {
+    flex: 1;
+    padding: 1rem;
+    border: solid 1px var(--text-content);
+    border-radius: 8px;
+  }
+
+  .form-input h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .input {
+    margin-bottom: 15px;
+  }
+
+  .input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .input input,
+  .input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .input input:focus,
+  .input textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+  }
+
+  .input select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .input textarea {
+    resize: none;
+    min-width: 100%;
+  }
+
+  .btn {
+    background-color: var(--primary);
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}

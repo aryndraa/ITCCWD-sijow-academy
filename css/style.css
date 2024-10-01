@@ -47,6 +47,21 @@ span.secondary {
   z-index: 99999;
 }
 
+.header.active {
+  position: fixed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: header ease forwards 500ms;
+}
+
+@keyframes header {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
 .header .nav {
   display: flex;
   justify-content: space-between;
